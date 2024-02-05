@@ -32,4 +32,10 @@ public class StudentManager {
 	    }
 	}
 	
+	public void displayStudents(){
+		for(Student i : studentList) {
+			System.out.println(i.toString());
+		}
+	}
+	
 }

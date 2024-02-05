@@ -6,10 +6,19 @@ public class Main {
 	   String fileName = "src/school/studentData.txt";
 	   StudentManager studentManager = new StudentManager();
 	   
-	   if (studentManager.readFromFile(fileName)) {
-		   for(Student student : studentManager.studentList) {
-			   System.out.println(student.toString());
-			   }
-		   }
-	   }
+	   // Read student data from a file and initialize Student objects.
+	   boolean fileReadStatus = studentManager.readFromFile(fileName);
+	   
+	   // Display all students.
+	   studentManager.displayStudents();
+	   
+	   // Search for a student by ID.
+	   //boolean studentFound = studentManager.searchStudentById(101);
+	   
+	   // Update the grade of a student by ID.
+	   //boolean studentGradeUpdateStatus = studentManager.updateStudentGradeById(102, 95);
+	   
+	   // Display all students after the update.
+	   studentManager.displayStudents();
    }
+}
