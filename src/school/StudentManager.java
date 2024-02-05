@@ -38,4 +38,16 @@ public class StudentManager {
 		}
 	}
 	
+	public boolean searchStudentById(int id) {
+		for(Student student : studentList) {
+			if(student.getId()==id) {
+				System.out.println("\nStudent found");
+				System.out.println(student.toString());
+				return true;
+			}
+		}
+		System.out.println("\nStudent not found");
+		return false;
+	}
+	
 }
