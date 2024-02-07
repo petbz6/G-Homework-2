@@ -50,4 +50,18 @@ public class StudentManager {
 		return false;
 	}
 	
+	public boolean updateStudentGradeById(int id, double grade) {
+		for(Student student : studentList) 
+		{
+			if(student.getId()==id) 
+			{
+				// if student's id equals provided id
+				student.setGrade(grade);
+				return true;
+			}
+		}
+		return false;
+		
+	}
+	
 }
