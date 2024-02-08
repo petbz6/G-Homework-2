@@ -56,6 +56,7 @@ public class StudentManager {
 			if(student.getId()==id) 
 			{
 				// if student's id equals provided id
+				System.out.println("\nUpdated Student Information");
 				student.setGrade(grade);
 				return true;
 			}

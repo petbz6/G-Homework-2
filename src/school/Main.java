@@ -12,17 +12,13 @@ public class Main {
 	   // Display all students.
 	   studentManager.displayStudents();
 	   
-	   //Search for a student by ID.
+	   // Search for a student by ID.
 	   boolean studentFound = studentManager.searchStudentById(101);
 	   
-	   boolean updatedGrade = studentManager.updateStudentGradeById(104, 30);
-	   
-	   studentManager.displayStudents();
-	   
 	   // Update the grade of a student by ID.
-	   //boolean studentGradeUpdateStatus = studentManager.updateStudentGradeById(102, 95);
+	   boolean updatedGrade = studentManager.updateStudentGradeById(104, 74);	   
 	   
 	   // Display all students after the update.
-	   //studentManager.displayStudents();
+	   studentManager.displayStudents();
    }
 }
